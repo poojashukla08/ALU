@@ -1,0 +1,44 @@
+//DESIGN FILE
+module alu(
+  input [3:0]a,b, [2:0]sel,
+  output reg [4:0]out
+);
+  always@(*)
+    begin
+      case(sel)
+        3'b000:out=a+b;
+        3'b001:out=a-b;
+        3'b010:out=a*b;
+        3'b011:out=a/b;
+        3'b100:out=a%b;
+        3'b101:out=a&b;
+        3'b110:out=a|b;
+        3'b111:out=~a;
+        default:out=5'b0000;
+      endcase
+    end
+endmodule
+
+//TESTBENCH
+module tb;
+  reg [3:0]a,b;
+  reg [2:0]sel;
+  wire [4:0]out;
+  alu dut(.*);
+  
+  initial begin
+    $monitor("a:%0d,b:%0d,sel:%0d,output:%0d",a,b,sel,out);
+    a=1;b=1;
+    sel=3'b001;
+    #1;
+    sel=3'b011;
+    #1;
+    sel=3'b110;
+    #1;
+    sel=3'b010;
+    #1;
+    sel=3'b001;
+    #1;
+    sel=3'b000;
+  end
+endmodule
