@@ -59,3 +59,6 @@ EDA Playground provided an online collaborative environment where design and tes
 Importance in VLSI Domain
 
 ALU design is a crucial building block in datapath design of processors. Understanding its Verilog implementation strengthens concepts in RTL coding, module instantiation, case-based operation control, and simulation analysis, which are essential skills for VLSI front-end design roles in the semiconductor industry.
+
+//OUTPUT
+![Image](https://github.com/user-attachments/assets/27a9e0c6-8734-4b5f-9ba1-5485b0a31a93)
