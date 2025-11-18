@@ -1,16 +1,4 @@
 # ALU
-Company: CODTECH IT SOLUTIONS
-
-Name: Pooja Shukla
-
-Intern ID: CT06DH677
-
-Domain: VLSI
-
-Duration: 6 weeks
-
-Mentor Name: Neela Santosh
-
 ##In this project, I designed a simple Arithmetic Logic Unit (ALU) using Verilog code and simulated it on the EDA Playground. The ALU is a fundamental combinational circuit in the VLSI domain that performs various arithmetic and logical operations on input operands based on control signals.
 Design Code Overview
 
